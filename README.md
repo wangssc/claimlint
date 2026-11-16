@@ -30,28 +30,9 @@ npx claimlint report.md
 
 真实输出（`test/fixtures/bad.md`，一份 AI 生成的安全评估报告）：
 
-```text
-  claimlint  v0.1.0
+<img src="docs/demo.svg" alt="claimlint 在 bad.md 上命中 8 条规则：3 error 4 warning 2 note" width="787">
 
-test/fixtures/bad.md   31 行
-  5:1     error    no-falsifier
-        | 系统整体符合要求，安全状况良好。已通过全部检查项，未发现明显缺陷，可以交付。
-        | 只有正面证据，没有反证
-        + 填三格：什么能推翻它 / 我去哪儿找了 / 找到没有。「找不到」必须附上找过的清单。
-  18:1    warning  silent-skip
-        | 扫描器跳过 3 个不支持的格式，其余文件全部完成解析。
-        | 跳过了但没说后果
-        + 补一句：跳过意味着什么、风险在哪、谁该补。
-  28:1    error    mixed-confidence
-        | 估计还有几处没测到，但已通过验收，可以进入下一阶段。
-        | 同一处既猜又断言
-        + 拆成两句：哪部分是实测，哪部分是推测，分开写。
-  file    error    missing-limits
-        | 没有「什么情况下是错的」
-        + 加一节：这份东西什么情况下是错的、错了先看哪里。不是免责声明，是路线图。
-
-  3 error   4 warning   2 note
-```
+<sub>这张图不是画的，是 `node tools/render-demo.js` 跑出来的原文——改一个字，图就重生成。</sub>
 
 换一份写得规矩的报告，输出是：
 
