@@ -1,0 +1,37 @@
+{
+  "name": "claimlint",
+  "version": "0.1.0",
+  "description": "Lint the claims in AI-generated reports, not the prose. Eight deterministic rules, zero dependencies, no network.",
+  "keywords": [
+    "lint",
+    "ai",
+    "audit",
+    "report",
+    "markdown",
+    "review",
+    "provenance"
+  ],
+  "bin": {
+    "claimlint": "bin/claimlint.js"
+  },
+  "main": "lib/rules.js",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin",
+    "lib",
+    "PROTOCOL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OWNER/claimlint.git"
+  },
+  "license": "MIT",
+  "dependencies": {}
+}
