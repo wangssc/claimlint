@@ -11,6 +11,16 @@
     "review",
     "provenance"
   ],
+  "author": "wangssc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangssc/claimlint.git"
+  },
+  "homepage": "https://github.com/wangssc/claimlint#readme",
+  "bugs": {
+    "url": "https://github.com/wangssc/claimlint/issues"
+  },
   "bin": {
     "claimlint": "bin/claimlint.js"
   },
@@ -28,10 +38,5 @@
   "scripts": {
     "test": "node test/run.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/OWNER/claimlint.git"
-  },
-  "license": "MIT",
   "dependencies": {}
 }
